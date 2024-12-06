@@ -44,12 +44,12 @@
   margin: 0;
   padding-left: 165px;
   padding-top: 75px;
-  content: url(/images/Add\ Button.png);
+  content: url(./images/Add\ Button.png);
   transition: content 1.5s ease-in-out 1.5s;
 }
 
 .profile__edit-button {
-  content: url(/images/Edit\ Button.png);
+  content: url(./images/Edit\ Button.png);
   transition: content 1.5s ease-in-out 1.5s;
   width: 24px;
   height: 24px;
@@ -60,11 +60,11 @@
 }
 
 .profile__edit-button:hover {
-  content: url(/images/Edit\ Button-hover.png);
+  content: url(./images/Edit\ Button-hover.png);
 }
 
 .profile__add-button:hover {
-  content: url(/images/Add\ Button-hover.png);
+  content: url(./images/Add\ Button-hover.png);
 }
 
 @media screen and (max-width: 320px) {
