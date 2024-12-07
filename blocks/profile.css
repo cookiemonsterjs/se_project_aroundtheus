@@ -23,7 +23,7 @@
   font-weight: 500;
   margin-top: 62px;
   margin-bottom: 7px;
-  align-items: center;
+  white-space: nowrap;
   font-size: 2.625em;
 }
 
