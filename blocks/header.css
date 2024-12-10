@@ -6,10 +6,11 @@
 .header__logo {
   margin: 0;
   margin-bottom: 41px;
+  margin-top: 45px;
 }
 
 .header__border {
-  border-bottom: 1px solid #545454;
+  border-bottom: 1px solid rgb(84, 84, 84, 1);
   margin: 0;
 }
 
@@ -27,8 +28,13 @@
   }
 
   .header__border {
-    border-bottom: 1px solid #545454;
-    max-width: 320px;
+    max-width: 100%;
     padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .header__logo {
+    padding-left: 19px;
   }
 }

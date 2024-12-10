@@ -10,31 +10,31 @@
     <title>SAround the US</title>
   </head>
   <body class="page">
-    <div class="page__content">
+    <main class="page__content">
       <header class="header">
         <img src="./images/Vector.png" alt="logo" class="header__logo" />
         <div class="header__border"></div>
       </header>
       <section class="profile">
-        <img
-          src="./images/Avatar.png"
-          alt="profile picture"
-          class="profile__image"
-        />
-        <div class="profile__content">
+        <div class="profile__text">
+          <img
+            src="./images/Avatar.png"
+            alt="profile picture"
+            class="profile__image"
+          />
           <div class="profile__block">
             <h1 class="profile__title">Jacques Cousteau</h1>
+            <button class="profile__button" type="button">
+              <img
+                src="./images/Edit Button.png"
+                alt="edit button"
+                class="profile__edit-button"
+              />
+            </button>
             <p class="profile__subtitle">Explorer</p>
           </div>
-          <button class="profile__button">
-            <img
-              src="./images/Edit Button.png"
-              alt="edit button"
-              class="profile__edit-button"
-            />
-          </button>
         </div>
-        <button class="profile__button">
+        <button class="profile__button" type="button">
           <img
             src="./images/Add Button.png"
             alt="add button"
@@ -42,7 +42,7 @@
           />
         </button>
       </section>
-      <main class="cards">
+      <section class="cards">
         <ul class="card__list">
           <li class="card__item">
             <img
@@ -50,7 +50,7 @@
               src="./images/yosemite.jpg"
               alt="yosemite valley"
             />
-            <button class="card__title">
+            <button class="card__title" type="button">
               <p class="card__name">Yosemite Valley</p>
               <img
                 src="./images/Vector.svg"
@@ -65,7 +65,7 @@
               src="./images/lake-louise.jpg"
               alt="Lake Louise"
             />
-            <button class="card__title">
+            <button class="card__title" type="button">
               <p class="card__name">Lake Louise</p>
               <img
                 src="./images/Vector.svg"
@@ -80,7 +80,7 @@
               src="./images/bald-mountains.jpg"
               alt="bald mountains"
             />
-            <button class="card__title">
+            <button class="card__title" type="button">
               <p class="card__name">Bald Mountains</p>
               <img
                 src="./images/Vector.svg"
@@ -89,7 +89,7 @@
               />
             </button>
           </li>
-          <li class="card__item">
+          <li class="card__item" type="button">
             <img class="card__image" src="./images/latemar.jpg" alt="Latemar" />
             <button class="card__title">
               <p class="card__name">Latemar</p>
@@ -106,7 +106,7 @@
               src="./images/vanoise.jpg"
               alt="Vanoise National Park"
             />
-            <button class="card__title">
+            <button class="card__title" type="button">
               <p class="card__name">Vanoise National Park</p>
               <img
                 src="./images/Vector.svg"
@@ -121,7 +121,7 @@
               src="./images/lago.jpg"
               alt="Lago di Braies"
             />
-            <button class="card__title">
+            <button class="card__title" type="button">
               <p class="card__name">Lago di Braies</p>
               <img
                 src="./images/Vector.svg"
@@ -131,10 +131,10 @@
             </button>
           </li>
         </ul>
-      </main>
+      </section>
       <footer class="footer">
         <p class="footer__copywrite">&copy 2022 Around The U.S.</p>
       </footer>
-    </div>
+    </main>
   </body>
 </html>
