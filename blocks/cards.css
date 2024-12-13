@@ -4,8 +4,77 @@
   padding: 0;
 }
 
+.cards__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 17px;
+  row-gap: 20px;
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  width: 282px;
+}
+
+.cards__image {
+  border-radius: 10px 10px 0 0;
+  height: 282px;
+}
+
+.cards__content {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  border-radius: 0 0 10px 10px;
+}
+
+.cards__name {
+  background-color: white;
+  font-weight: 900;
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2;
+  padding: 25px 0 25px 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+}
+
+.cards__item button {
+  border: none;
+  background-color: white;
+}
+
+.cards__icon {
+  padding: 31px 0 30px 0;
+  transition: opacity 0.3s ease-in;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+
+.cards__icon:hover {
+  opacity: 50%;
+}
+
+@media screen and (max-width: 775px) {
+  .cards__list {
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .cards {
     margin: 2.25em 1em 0 1em;
+  }
+
+  .cards__list {
+    display: flex;
+    flex-direction: column;
   }
 }
