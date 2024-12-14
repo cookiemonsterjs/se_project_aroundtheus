@@ -3,3 +3,4 @@
 #All images were provided by Figma project. 
 #Buttons are .svg files. 
 #Website can be found at https://cookiemonsterjs.github.io/se_project_aroundtheus/
+#Acess video recording of my project at: https://drive.google.com/file/d/1OigUPdD7m01NQAm6ww1DMv1VLD0fjP9w/view?usp=sharing
