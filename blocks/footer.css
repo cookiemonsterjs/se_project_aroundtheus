@@ -10,6 +10,12 @@
   padding: 0;
 }
 
+@media screen and (max-width: 775px) {
+  .footer__copywrite {
+    padding: 48px 19px 36px 19px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .footer {
     padding: 0;
@@ -19,11 +25,5 @@
     padding: 48px 19px 36px 19px;
     line-height: 1.2;
     font-size: 1em;
-  }
-}
-
-@media screen and (max-width: 775px) {
-  .footer__copywrite {
-    padding: 48px 19px 36px 19px;
   }
 }

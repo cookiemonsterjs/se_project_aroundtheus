@@ -45,7 +45,7 @@
   max-width: 282px;
 }
 
-.cards__pad button {
+.cards__pad__button {
   border: none;
   background-color: white;
   background-image: url("./../images/heart.svg");
