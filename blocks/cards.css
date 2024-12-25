@@ -66,20 +66,19 @@
   opacity: 50%;
 }
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 1280px) {
   .cards__list {
     grid-template-columns: auto auto;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 800px) {
   .cards {
     margin: 2.25em 1em 0 1em;
   }
 
   .cards__list {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: auto;
   }
 }
