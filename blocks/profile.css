@@ -3,7 +3,6 @@
   display: flex;
   margin-top: 40px;
   margin-bottom: 51px;
-  height: 120px;
   justify-content: space-between;
 }
 
@@ -33,7 +32,6 @@
   font-size: 2.6em;
   line-height: 48px;
   margin: 0px;
-  height: 48px;
   min-width: 373px;
 }
 
@@ -57,13 +55,15 @@
 
 .profile__add-button {
   align-self: center;
-  background-image: url(./../images/Add_Button.svg);
+  background-image: url(./../images/Vector\ plus.svg);
+  border: white;
   width: 150px;
-  height: 160px;
+  height: 50px;
   background-repeat: no-repeat;
   background-color: black;
   background-position: center;
-  border: none;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .profile__edit-button {
@@ -78,37 +78,39 @@
 
 @media screen and (max-width: 800px) {
   .profile {
-    flex-direction: column;
+    display: grid;
     padding: 0;
     margin-top: 42px;
     margin-bottom: 36px;
-    height: 286px;
   }
 
   .profile__block {
-    grid-template-columns: auto auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 10px;
+    width: 100%;
+    padding: 0;
   }
 
   .profile__text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     padding: 0;
+    line-height: 26.63px;
   }
 
   .profile__image {
     padding: 0;
-    justify-content: center;
     height: 120px;
     width: 120px;
+    margin-bottom: 30px;
   }
 
   .profile__title {
     font-size: 1.3em;
     line-height: 1.2em;
     margin: 0;
-    height: 22px;
     margin-bottom: 0px;
     justify-self: center;
     min-width: 196px;
@@ -119,6 +121,11 @@
     font-size: 14px;
     justify-self: center;
     max-width: 282px;
+    margin-bottom: 36px;
+    line-height: 16.94px;
+  }
+  .profile__button {
+    display: flex;
   }
 
   .profile__edit-button {
@@ -129,13 +136,8 @@
 
   .profile__add-button {
     padding: 0;
-    margin: 0;
     width: 282px;
-    background-image: url(./../images/Add_Button_big.svg);
     height: 50px;
-  }
-
-  .profile__button {
-    display: flex;
+    margin: 0;
   }
 }
