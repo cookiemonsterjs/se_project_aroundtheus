@@ -33,5 +33,3 @@ const initialCards = [
     
     },
 ];
-
-console.log(initialCards);
