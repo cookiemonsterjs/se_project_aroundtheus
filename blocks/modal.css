@@ -63,6 +63,7 @@
   background-size: contain;
   top: -45px;
   right: -45px;
+  transition: background-image 0.04s ease-in-out;
 }
 
 .modal__button {
@@ -75,6 +76,15 @@
   border-radius: 2px;
   padding: 13px 124px 19px;
   margin-top: 48px;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  background-image: url("../images/Close\ Icon\ hover\ \(1\).svg");
+}
+
+.modal__button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 620px) {
