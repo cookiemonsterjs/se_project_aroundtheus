@@ -23,7 +23,11 @@
           />
           <div class="profile__block">
             <h1 class="profile__title">Jacques Cousteau</h1>
-            <button class="profile__button" type="button">
+            <button
+              class="profile__button"
+              type="button"
+              id="profile-edit-button"
+            >
               <img
                 src="./images/Edit_Button.svg"
                 alt="edit button"
@@ -124,13 +128,23 @@
         <p class="footer__copywrite">&copy; 2022 Around The U.S.</p>
       </footer>
     </main>
-    <div class="modal">
+    <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
-        <button class="modal__close"></button>
+        <button class="modal_close" id="profile-button-close"></button>
         <p class="modal__header">Edit profile</p>
         <form class="modal__form">
-          <input type="text" name="title" class="modal__input" />
-          <input type="text" name="subtitle" class="modal__input" />
+          <input
+            type="text"
+            name="title"
+            class="modal__input"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            name="subtitle"
+            class="modal__input"
+            placeholder="Description"
+          />
           <button class="modal__button">Save</button>
         </form>
       </div>

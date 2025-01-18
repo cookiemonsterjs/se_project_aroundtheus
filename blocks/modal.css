@@ -1,4 +1,5 @@
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -6,13 +7,12 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 19px;
 }
 
-.modal_opened {
+.modal__opened {
   display: flex;
 }
 
@@ -51,7 +51,7 @@
   line-height: 16.94px;
 }
 
-.modal__close {
+.modal_close {
   position: absolute;
   background-image: url("../images/Close\ Icon.svg");
   border: none;
