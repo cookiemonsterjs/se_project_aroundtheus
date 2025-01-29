@@ -52,7 +52,7 @@
   background-repeat: no-repeat;
   width: 21px;
   cursor: pointer;
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.2s ease-in;
 }
 
 .cards__pad {
