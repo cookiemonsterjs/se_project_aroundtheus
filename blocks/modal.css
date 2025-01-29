@@ -12,7 +12,7 @@
   padding: 0 19px;
 }
 
-.modal__opened {
+.modal_opened {
   display: flex;
 }
 
@@ -51,8 +51,9 @@
   line-height: 16.94px;
 }
 
-.modal_close {
+.modal__close {
   position: absolute;
+  display: block;
   background-image: url("../images/Close\ Icon.svg");
   border: none;
   cursor: pointer;
@@ -63,7 +64,8 @@
   background-size: contain;
   top: -45px;
   right: -45px;
-  transition: background-image 0.04s ease-in-out;
+  left: auto;
+  transition: background-image 0.02s ease-in-out;
 }
 
 .modal__button {
