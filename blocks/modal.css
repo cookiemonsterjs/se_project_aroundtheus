@@ -51,7 +51,7 @@
   line-height: 16.94px;
 }
 
-.modal__close {
+.modal_close {
   position: absolute;
   display: block;
   background-image: url("../images/Close\ Icon.svg");
@@ -81,7 +81,7 @@
   cursor: pointer;
 }
 
-.modal__close:hover {
+.modal_close:hover {
   background-image: url("../images/Close\ Icon\ hover\ \(1\).svg");
 }
 
@@ -89,8 +89,73 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.imageModal__preview {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  overflow: visible;
+  z-index: 10;
+}
+
+.imageModal__preview_opened {
+  display: flex;
+}
+
+.imageModal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.imageModal__preview__img {
+  max-width: 75vw;
+  max-height: 75vh;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+
+.imageModal_close {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  background-image: url("../images/Close Icon.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  z-index: 5;
+}
+
+.imageModal__text {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: initial;
+  padding-bottom: 10px;
+  z-index: 4;
+  margin-right: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 responsive                                 */
+/* -------------------------------------------------------------------------- */
+
 @media screen and (max-width: 620px) {
-  .modal__close {
+  .modal_close {
     top: -61px;
     right: 0px;
     width: 26px;
@@ -120,5 +185,17 @@
     font-size: 14px;
     line-height: 17px;
     margin-top: 45px;
+  }
+
+  .imageModal_close {
+    top: -40px;
+    right: -35px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .imageModal__text {
+    bottom: 70px;
+    left: 0;
   }
 }
