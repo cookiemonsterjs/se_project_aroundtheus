@@ -136,6 +136,11 @@
   width: 40px;
   height: 40px;
   z-index: 5;
+  transition: background-image 0.02s ease-in-out;
+}
+
+.imageModal_close:hover {
+  background-image: url("../images/Close\ Icon\ hover\ \(1\).svg");
 }
 
 .imageModal__text {
