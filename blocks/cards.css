@@ -82,9 +82,10 @@
   z-index: 1;
   top: 18px;
   right: 15px;
+  transition: opacity 0.1s ease-in;
 }
 
-.delete__button_active {
+.delete__button:hover {
   background-image: url("./../images/Trash_active.svg");
 }
 

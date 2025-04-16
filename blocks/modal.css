@@ -10,10 +10,18 @@
   align-items: center;
   justify-content: center;
   padding: 0 19px;
+  width: 100vw;
+  height: 100vh;
+  overflow: visible;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal_opened {
   display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal__container {
@@ -51,7 +59,7 @@
   line-height: 16.94px;
 }
 
-.modal_close {
+.modal__close {
   position: absolute;
   display: block;
   background-image: url("../images/Close\ Icon.svg");
@@ -81,30 +89,12 @@
   cursor: pointer;
 }
 
-.modal_close:hover {
+.modal__close:hover {
   background-image: url("../images/Close\ Icon\ hover\ \(1\).svg");
 }
 
 .modal__button:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
-
-.imageModal__preview {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100vw;
-  height: 100vh;
-  overflow: visible;
-  z-index: 10;
-}
-
-.imageModal__preview_opened {
-  display: flex;
 }
 
 .imageModal__content {
@@ -121,26 +111,6 @@
   object-fit: contain;
   width: auto;
   height: auto;
-}
-
-.imageModal_close {
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  background-image: url("../images/Close Icon.svg");
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: none;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  z-index: 5;
-  transition: background-image 0.02s ease-in-out;
-}
-
-.imageModal_close:hover {
-  background-image: url("../images/Close\ Icon\ hover\ \(1\).svg");
 }
 
 .imageModal__text {

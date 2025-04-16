@@ -33,7 +33,7 @@ const initialCards = [
 
 const profileEditButton = document.querySelector("#profile-edit-button");
 const profileEditModal = document.querySelector("#profile-edit-modal");
-const profileEditCloseButton = profileEditModal.querySelector(".modal_close");
+const profileEditCloseButton = profileEditModal.querySelector(".modal__close");
 const profileTitle = document.querySelector(".profile__title");
 const profileSubtitle = document.querySelector(".profile__subtitle");
 const profileTitleInput = document.querySelector("#profile-title");
@@ -45,7 +45,7 @@ const cardListEl = document.querySelector(".cards__list");
 
 const addCardModal = document.querySelector("#add-popup");
 const cardAddButton = document.querySelector("#add-button");
-const addCardCloseButton = addCardModal.querySelector(".modal_close");
+const addCardCloseButton = addCardModal.querySelector(".modal__close");
 const addCardForm = document.querySelector("#add-card-form");
 
 const imageModal = document.querySelector("#image-modal");
@@ -92,13 +92,6 @@ function getCardElement(cardData) {
     likeButton.classList.toggle("cards__pad-button_active");
   });
 
-  deleteButton.addEventListener("mouseenter", () => {
-    deleteButton.classList.add("delete__button_active");
-  });
-
-  deleteButton.addEventListener("mouseleave", () => {
-    deleteButton.classList.remove("delete__button_active");
-  });
   deleteButton.addEventListener("click", () => {
     const cardElement = deleteButton.closest(".cards__item");
     cardElement.remove();
@@ -106,7 +99,7 @@ function getCardElement(cardData) {
 
   cardImageEl.addEventListener("click", () => {
     enlargeImage(cardData);
-    imageModal.classList.add("imageModal__preview_opened");
+    openPopup(imageModal);
   });
 
   return cardElement;
@@ -122,6 +115,8 @@ addCardForm.addEventListener("submit", (e) => {
     alt: title,
   });
   cardListEl.prepend(cardElement);
+  e.target.title.value = "";
+  e.target.link.value = "";
   closePopup(addCardModal);
 });
 
@@ -150,5 +145,5 @@ initialCards.forEach((cardData) => {
 });
 
 imageCloseButton.addEventListener("click", () => {
-  imageModal.classList.remove("imageModal__preview_opened");
+  closePopup(imageModal);
 });
